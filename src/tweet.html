@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="CodeBird.js"></script>
+</head>
+
+
+
+
+<body>
+    <img src="https://www.expert-seo-training-institute.in/blog/wp-content/uploads/2017/04/twitter.jpg" alt="Fjords" width="300"
+        height="200">
+
+
+    <div class="form-group">
+        <label for="comment">What's happening?</label>
+        <textarea class="form-control" rows="5" id="text1" value="meez"></textarea>
+    </div>
+
+
+    <a href="https://twitter.com/mytestm" <button onclick="myFunction()" type="button" class="btn btn-primary">Tweet</button>
+    </a>
+
+
+    <script type="text/javascript">
+        var cb = new Codebird;
+        cb.setConsumerKey("ltxCBlZ8upQIqFnE2aS3OsPXh", "CC3t8FSQaKCJNjQUGZoEqX4t323V0iR04RoBAnKKCu2JYmbTpv");
+        cb.setToken("937280746041036800-rZGc5wcwW5eJvdb6Omank6GDP2GLkjp", "yognNZoCU1mHxgNPMHplUxmYb10k7KDWfDdy67tMbcOhm");
+
+        function myFunction() {
+            var x = document.getElementById("text1").value;
+            document.getElementById("text1").innerHTML = x;
+
+            var params = {
+
+                status: x
+
+
+            };
+
+            cb.__call(
+
+                "statuses_update",
+                params
+
+
+            );
+
+        }
+
+    </script>
+</body>
+
+</html>
