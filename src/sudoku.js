@@ -30,6 +30,7 @@ function sudoku(grid) {
             }
         }
         return true;
+        
     }
 
 }
