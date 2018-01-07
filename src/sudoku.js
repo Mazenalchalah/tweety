@@ -24,6 +24,8 @@ function sudoku(grid) {
                         return false;
                     }
                 }
+
+                
             }
             else {
                 return false;
