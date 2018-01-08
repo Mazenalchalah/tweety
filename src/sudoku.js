@@ -22,6 +22,10 @@ function sudoku(grid) {
                     if (grid[k][i] === grid[k][j] && coltorow[k][a] === coltorow[k][b]) {
 
                         return false;
+                
+                
+                
+                
                     }
                 }
 
